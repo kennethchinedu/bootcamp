@@ -1,0 +1,186 @@
+[0m00:09:40.632390 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2fd88e320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2fe08b670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2fb65bca0>]}
+
+
+============================== 00:09:40.643199 | 5ef9616c-f966-4905-bc2b-3bd9fdb7f334 ==============================
+[0m00:09:40.643199 [info ] [MainThread]: Running with dbt=1.7.7
+[0m00:09:40.648245 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:09:47.103414 [debug] [MainThread]: Starter project path: /home/anamsken/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m00:09:47.413742 [info ] [MainThread]: 
+Your new dbt project "ny_taxi_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:09:47.418025 [info ] [MainThread]: Setting up your profile.
+[0m00:10:10.608015 [error] [MainThread]: Encountered an error:
+
+[0m00:10:10.612116 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/cli/requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/task/init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/task/init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/task/init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/home/anamsken/.local/lib/python3.10/site-packages/dbt/task/init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/usr/local/lib/python3.10/dist-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/usr/local/lib/python3.10/dist-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m00:10:10.618753 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 30.14997, "process_user_time": 4.748191, "process_kernel_time": 0.269897, "process_mem_max_rss": "97912", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:10:10.623436 [debug] [MainThread]: Command `dbt init` failed at 00:10:10.622967 after 30.16 seconds
+[0m00:10:10.626166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2fd88e320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2fb093d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe2fb0919f0>]}
+[0m00:10:10.629208 [debug] [MainThread]: Flushing usage events
+[0m00:10:30.123962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3c08f2320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3c10ef670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3be6bfca0>]}
+
+
+============================== 00:10:30.135903 | 35263d52-b69e-45ff-9417-4e1dce285074 ==============================
+[0m00:10:30.135903 [info ] [MainThread]: Running with dbt=1.7.7
+[0m00:10:30.139819 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m00:10:38.750384 [debug] [MainThread]: Starter project path: /home/anamsken/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m00:10:39.303880 [info ] [MainThread]: 
+Your new dbt project "ny_taxi_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:10:39.308322 [info ] [MainThread]: Setting up your profile.
+[0m00:11:07.694160 [info ] [MainThread]: Profile ny_taxi_data written to /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m00:11:07.715451 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 37.722656, "process_user_time": 7.896156, "process_kernel_time": 0.434743, "process_mem_max_rss": "97652", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:11:07.832609 [debug] [MainThread]: Command `dbt init` succeeded at 00:11:07.832140 after 37.84 seconds
+[0m00:11:07.860557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3c08f2320>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3be6be500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd3be6bde10>]}
+[0m00:11:07.865597 [debug] [MainThread]: Flushing usage events
+[0m00:11:54.817529 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab29bb7430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab2a3af5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab2797f340>]}
+
+
+============================== 00:11:54.824603 | a5220b5a-20c9-4776-93e8-002112575b07 ==============================
+[0m00:11:54.824603 [info ] [MainThread]: Running with dbt=1.7.7
+[0m00:11:54.829380 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m00:11:54.832946 [info ] [MainThread]: dbt version: 1.7.7
+[0m00:11:54.836314 [info ] [MainThread]: python version: 3.10.12
+[0m00:11:54.843673 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:11:54.848146 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m00:11:55.149847 [info ] [MainThread]: Using profiles dir at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt
+[0m00:11:55.152398 [info ] [MainThread]: Using profiles.yml file at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/profiles.yml
+[0m00:11:55.154708 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/dbt_project.yml
+[0m00:11:55.157602 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m00:11:55.164466 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.47431853, "process_user_time": 5.461923, "process_kernel_time": 0.209307, "process_mem_max_rss": "98208", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:11:55.170221 [debug] [MainThread]: Command `dbt debug` failed at 00:11:55.169567 after 0.48 seconds
+[0m00:11:55.173354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab29bb7430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab27139840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fab2797c190>]}
+[0m00:11:55.176868 [debug] [MainThread]: Flushing usage events
+[0m00:16:50.956199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64f092440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64ce79ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64ce7b400>]}
+
+
+============================== 00:16:50.963507 | 3ffcc02b-53f2-45b7-b662-34feca6958f5 ==============================
+[0m00:16:50.963507 [info ] [MainThread]: Running with dbt=1.7.7
+[0m00:16:50.966306 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m00:16:50.969193 [info ] [MainThread]: dbt version: 1.7.7
+[0m00:16:50.972215 [info ] [MainThread]: python version: 3.10.12
+[0m00:16:50.975087 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:16:50.980556 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m00:16:51.280919 [info ] [MainThread]: Using profiles dir at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt
+[0m00:16:51.283637 [info ] [MainThread]: Using profiles.yml file at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/profiles.yml
+[0m00:16:51.286093 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/dbt_project.yml
+[0m00:16:51.289368 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m00:16:51.293792 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.4501082, "process_user_time": 5.151602, "process_kernel_time": 0.269039, "process_mem_max_rss": "98288", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:16:51.298144 [debug] [MainThread]: Command `dbt debug` failed at 00:16:51.297304 after 0.45 seconds
+[0m00:16:51.300875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64f092440>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64ce7a3b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb64c8cb5e0>]}
+[0m00:16:51.305096 [debug] [MainThread]: Flushing usage events
+[0m00:17:22.218689 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f682cd2e4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f682ab12170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f682ab101f0>]}
+
+
+============================== 00:17:22.225134 | 6dd68f21-e5a1-4119-8ab5-9cf385ec58ab ==============================
+[0m00:17:22.225134 [info ] [MainThread]: Running with dbt=1.7.7
+[0m00:17:22.227805 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:17:22.230773 [info ] [MainThread]: dbt version: 1.7.7
+[0m00:17:22.233605 [info ] [MainThread]: python version: 3.10.12
+[0m00:17:22.236859 [info ] [MainThread]: python path: /usr/bin/python3
+[0m00:17:22.241887 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m00:17:22.896994 [info ] [MainThread]: Using profiles dir at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt
+[0m00:17:22.902129 [info ] [MainThread]: Using profiles.yml file at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/profiles.yml
+[0m00:17:22.905097 [info ] [MainThread]: Using dbt_project.yml file at /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/dbt_project.yml
+[0m00:17:22.908317 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m00:17:22.917014 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.81358504, "process_user_time": 7.614759, "process_kernel_time": 0.239834, "process_mem_max_rss": "98204", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:17:22.925160 [debug] [MainThread]: Command `dbt debug` failed at 00:17:22.924430 after 0.82 seconds
+[0m00:17:22.932086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f682cd2e4a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6829f4c520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f682ab109d0>]}
+[0m00:17:22.940201 [debug] [MainThread]: Flushing usage events
+[0m01:00:46.174226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d6f591a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d6fd77610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d6d337c40>]}
+
+
+============================== 01:00:46.198843 | ff9a171e-a133-439b-983a-e681beacb8cd ==============================
+[0m01:00:46.198843 [info ] [MainThread]: Running with dbt=1.7.7
+[0m01:00:46.204260 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m01:00:59.139659 [debug] [MainThread]: Starter project path: /home/anamsken/.local/lib/python3.10/site-packages/dbt/include/starter_project
+[0m01:01:00.351282 [info ] [MainThread]: 
+Your new dbt project "ny_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m01:01:00.361584 [info ] [MainThread]: Setting up your profile.
+[0m01:03:26.877840 [info ] [MainThread]: Profile ny_data written to /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m01:03:26.888684 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 161.65761, "process_user_time": 10.374848, "process_kernel_time": 1.172237, "process_mem_max_rss": "100328", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m01:03:26.899893 [debug] [MainThread]: Command `dbt init` succeeded at 01:03:26.897467 after 161.67 seconds
+[0m01:03:26.906344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d6f591a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d6d1b43d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3d6d335630>]}
+[0m01:03:26.910437 [debug] [MainThread]: Flushing usage events
+[0m12:28:54.609768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f521d2f64a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f521b0e2170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f521b0e01f0>]}
+
+
+============================== 12:28:54.616514 | e3154114-7a28-4104-b4f2-644a7ce35b4f ==============================
+[0m12:28:54.616514 [info ] [MainThread]: Running with dbt=1.7.7
+[0m12:28:54.620217 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/anamsken/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt deps', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:28:54.625040 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /mnt/c/Users/anams/OneDrive/Desktop/DE/Bootcamp/week4/dbt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:28:54.630095 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_wall_clock_time": 0.10208629, "process_user_time": 2.976854, "process_kernel_time": 0.110253, "process_mem_max_rss": "93268", "process_in_blocks": "544", "command_success": false, "process_out_blocks": "0"}
+[0m12:28:54.632782 [debug] [MainThread]: Command `dbt deps` failed at 12:28:54.632357 after 0.10 seconds
+[0m12:28:54.636277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f521d2f64a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f521b0e0910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f521b0e1ba0>]}
+[0m12:28:54.641057 [debug] [MainThread]: Flushing usage events

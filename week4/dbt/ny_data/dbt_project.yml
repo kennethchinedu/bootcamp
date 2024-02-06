@@ -33,5 +33,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   ny_data:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    # example:
+    #   +materialized: view
+
+  seeds:
+    +materialized: view
+    zones:
+      - column_types:
+          locationid: numeric 
